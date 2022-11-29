@@ -694,7 +694,7 @@ figure {
   margin-right: 10px;
 }
 
-.join-us {
+.footer-span {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -786,4 +786,8 @@ figure {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.newsletter-list {
+  list-style-type: none;
 }
