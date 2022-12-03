@@ -805,6 +805,7 @@ figure {
   border-radius: 4px;
   background-color: #2196f300;
   border: 1px solid #ffffff4d;
+  outline: none !important;
 }
 
 .newsletter-form {
@@ -892,18 +893,19 @@ figure {
   border: 1px solid #21212133;
   border-radius: 4px;
   text-indent: 40px;
-  transition: background-color 250ms, color 250ms;
+  transition: border-color 250ms, color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none !important;
 }
 
 .input-box:focus {
-  outline: none !important;
   border-color: var(--secondary-color);
 }
 
 .input-comment {
   width: 100%;
   height: 120px;
+  outline: none !important;
 }
 
 .form-label {
@@ -915,6 +917,7 @@ figure {
   position: absolute;
   left: 12px;
   bottom: 11px;
+  outline: none !important;
 }
 
 .textarea {
@@ -966,8 +969,6 @@ figure {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
-  display: none;
 }
 
 .button-wrapper {
@@ -979,7 +980,6 @@ figure {
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
 }
 
 .icon-check:checked {
@@ -987,16 +987,14 @@ figure {
 }
 
 .check-box {
-  position: absolute;
   width: 16px;
   height: 15px;
-  z-index: 1;
+  margin-right: 7px;
 }
 
 .checkbox-wrapper {
+  display: flex;
   height: 100%;
+  width: 100%;
   align-items: center;
 }
-/* .check-box: checked + .checkbox {
-  color: green;
-} */
