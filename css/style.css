@@ -134,7 +134,8 @@ figure {
   align-items: center;
   flex-wrap: nowrap;
 }
-.logo {
+
+.header__logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -144,7 +145,7 @@ figure {
   color: var(--secondary-color);
 }
 
-.logo-header {
+.header__logo--decoration {
   color: #000000;
   margin-right: 47px;
 }
@@ -153,7 +154,10 @@ figure {
   color: #ffffff;
 }
 
-.mail {
+.contact-list_item_mail {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
   display: flex;
   position: relative;
   align-items: center;
@@ -170,7 +174,10 @@ figure {
   border-radius: nullpx;
 }
 
-.phone {
+.contact-list_item_phone {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
   display: flex;
   position: relative;
   align-items: center;
@@ -208,7 +215,7 @@ figure {
   background-color: #2f303a;
 }
 
-.slogan {
+.box_slogan {
   height: 120px;
   width: 696px;
   left: 452px;
@@ -248,7 +255,7 @@ figure {
   box-shadow: 0 2px 5px #6b6b6b;
 }
 
-.order {
+.box_slogan_button {
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -262,7 +269,7 @@ figure {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order:hover {
+.box_slogan_button:hover {
   box-shadow: 0 2px 5px #000000;
 }
 
@@ -368,7 +375,7 @@ figure {
   text-align: end;
 }
 
-.contact-list-item {
+.contact-list_item {
   margin-left: 0px;
   color: #757575;
 }
@@ -387,6 +394,25 @@ figure {
   margin-left: 46px;
   color: var(--primary-color);
   position: relative;
+}
+
+.navigation-list {
+  list-style-position: inside;
+  list-style-type: none;
+  display: inline-flex;
+  color: var(--primary-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.navigation-list__item {
+  margin-left: 46px;
+  color: var(--primary-color);
+  position: relative;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .first-page::after {
@@ -741,7 +767,7 @@ figure {
   position: relative;
 }
 
-.contact-icon {
+.contact-list_item_icon {
   fill: #757575;
   margin-right: 10px;
 }
