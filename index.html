@@ -18,15 +18,13 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header">
-          <!-- LOGO -->
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header--container">
+        <div class="header--wrapper">
           <a class="header__logo" href="index.html"
             >Web<span class="header__logo--decoration">Studio</span></a
           >
-          <!-- ( ͡° ͜ʖ ͡°) -->
-          <!-- NAVIGATION -->
           <nav>
             <ul class="navigation-list">
               <li>
@@ -42,8 +40,6 @@
               <li><a class="navigation-list__item" href="#">Kontakty</a></li>
             </ul>
           </nav>
-          <!-- ( ͡° ͜ʖ ͡°) -->
-          <!-- CONTACTS -->
           <ul class="contact-list">
             <li class="contact-list_item">
               <a class="contact-list_item_mail" href="mailto:info@devstudio.com"
@@ -62,11 +58,12 @@
               >
             </li>
           </ul>
-          <!-- ( ͡° ͜ʖ ͡°) -->
         </div>
       </div>
     </header>
+    <!-- ( ͡° ͜ʖ ͡°) -->
     <main>
+      <!-- SLOGAN -->
       <div class="box">
         <div class="box_slogan">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -79,61 +76,63 @@
           </button>
         </div>
       </div>
-      <section class="section">
-        <div class="container">
-          <div class="paragraphs">
-            <ul class="list-no-wrap">
-              <li class="list-paragraph">
-                <div>
-                  <div class="icon-box">
+      <!-- ( ͡° ͜ʖ ͡°) -->
+      <!-- ARTICLES SECTION -->
+      <section class="articles">
+        <div class="articles--container">
+          <div class="articles--wrapper">
+            <ul class="articles_list">
+              <li>
+                <div class="articles_list_item">
+                  <div class="articles_list_item_icon">
                     <svg width="70" height="70">
                       <use href="./images/icons.svg#icon-antenna-1"></use>
                     </svg>
                   </div>
-                  <h4 class="title">LOREM IPSUM</h4>
-                  <p class="paragraf">
+                  <h4 class="articles_list_item_title">LOREM IPSUM</h4>
+                  <p class="articles_list_item_paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                     vel arcu sem. Sed non sodales dui. Interdum et malesuada
                   </p>
                 </div>
               </li>
-              <li class="list-paragraph">
-                <div>
-                  <div class="icon-box">
+              <li>
+                <div class="articles_list_item">
+                  <div class="articles_list_item_icon">
                     <svg width="70" height="70">
                       <use href="./images/icons.svg#icon-clock-1"></use>
                     </svg>
                   </div>
-                  <h4 class="title">LOREM IPSUM</h4>
-                  <p class="paragraf">
+                  <h4 class="articles_list_item_title">LOREM IPSUM</h4>
+                  <p class="articles_list_item_paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                     vel arcu sem. Sed non sodales dui. Interdum et malesuada
                   </p>
                 </div>
               </li>
-              <li class="list-paragraph">
-                <div>
-                  <div class="icon-box">
+              <li>
+                <div class="articles_list_item">
+                  <div class="articles_list_item_icon">
                     <svg width="70" height="70">
                       <use href="./images/icons.svg#icon-diagram-1"></use>
                     </svg>
                   </div>
-                  <h4 class="title">LOREM IPSUM</h4>
-                  <p class="paragraf">
+                  <h4 class="articles_list_item_title">LOREM IPSUM</h4>
+                  <p class="articles_list_item_paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                     vel arcu sem. Sed non sodales dui. Interdum et malesuada
                   </p>
                 </div>
               </li>
-              <li class="list-paragraph-end">
-                <div>
-                  <div class="icon-box">
+              <li>
+                <div class="articles_list_item">
+                  <div class="articles_list_item_icon">
                     <svg width="70" height="70">
                       <use href="./images/icons.svg#icon-astronaut-1"></use>
                     </svg>
                   </div>
-                  <h4 class="title">LOREM IPSUM</h4>
-                  <p class="paragraf">
+                  <h4 class="articles_list_item_title">LOREM IPSUM</h4>
+                  <p class="articles_list_item_paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                     vel arcu sem. Sed non sodales dui. Interdum et malesuada
                   </p>
@@ -143,55 +142,59 @@
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">Czym się zajmujemy</h2>
-          <div class="destiny">
-            <ul class="objectives">
-              <div class="thumb">
-                <li class="list-paragraph">
+      <!-- ( ͡° ͜ʖ ͡°) -->
+      <!-- OUR-WORK -->
+      <section class="our-work">
+        <div class="our-work--container">
+          <h2 class="our-work_title">Czym się zajmujemy</h2>
+          <div class="our-work--wrapper">
+            <ul class="our-work_list">
+              <div class="our-work_list--thumb">
+                <li>
                   <img
                     src="./images/home/box1.jpg"
                     alt="zdjęcie przedstawiające programistę przy pracy"
                     height="294"
                     width="370"
                   />
-                  <p class="label">APLIKACJE KOMPUTEROWE</p>
+                  <p class="our-work_list_label">APLIKACJE KOMPUTEROWE</p>
                 </li>
               </div>
-              <div class="thumb">
-                <li class="list-paragraph">
+              <div class="our-work_list--thumb">
+                <li>
                   <img
                     src="./images/home/box2.jpg"
                     alt="zdjęcie przedstawiające tworzenie aplikacji na smartfony"
                     height="294"
                     width="370"
                   />
-                  <p class="label">APLIKACJE MOBILNE</p>
+                  <p class="our-work_list_label">APLIKACJE MOBILNE</p>
                 </li>
               </div>
-              <div class="thumb">
-                <li class="list-paragraph-end">
+              <div class="our-work_list--thumb">
+                <li>
                   <img
                     src="./images/home/box3.jpg"
                     alt="zdjęcie przedstawiające pracę grafika"
                     height="294"
                     width="370"
                   />
-                  <p class="label">ROZWIĄZANIA GRAFICZNE</p>
+                  <p class="our-work_list_label">ROZWIĄZANIA GRAFICZNE</p>
                 </li>
               </div>
             </ul>
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="team">
-          <div class="container">
-            <h2 class="section-two-title">Nasz zespół</h2>
-            <ul class="list-no-wrap">
+      <!-- ( ͡° ͜ʖ ͡°) -->
+      <!-- TEAM -->
+      <section class="team">
+        <div class="team--wrapper">
+          <div class="team--container">
+            <h2 class="team_title">Nasz zespół</h2>
+            <ul class="team_list">
               <li>
-                <div class="members">
+                <div class="team_members">
                   <figure>
                     <img
                       src="./images/home/portrait1.jpg"
@@ -247,7 +250,7 @@
                 </div>
               </li>
               <li>
-                <div class="members">
+                <div class="team_members">
                   <figure>
                     <img
                       src="./images/home/portrait2.jpg"
@@ -304,7 +307,7 @@
                 </div>
               </li>
               <li>
-                <div class="members">
+                <div class="team_members">
                   <figure>
                     <img
                       src="./images/home/portrait3.jpg"
@@ -360,7 +363,7 @@
                 </div>
               </li>
               <li>
-                <div class="members">
+                <div class="team_members">
                   <figure>
                     <img
                       src="./images/home/portrait4.jpg"
