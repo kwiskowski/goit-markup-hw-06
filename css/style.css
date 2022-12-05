@@ -44,7 +44,7 @@ figure {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.client-box {
+.client_box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,19 +56,18 @@ figure {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-box:hover {
+.client_box:hover {
   border-color: #2196f3;
 }
 
-.clients {
+.clients--wrapper {
   height: 184px;
   width: 1170px;
   border-radius: [object Object]px;
-  /* margin-top: 94px; */
   margin-bottom: 94px;
 }
 
-.social-media-box {
+.team_member_social-media {
   display: flex;
   width: 100%;
   height: 44px;
@@ -91,6 +90,24 @@ figure {
 }
 
 .media-icon:hover {
+  fill: #eeeeee;
+  background-color: #2196f3;
+}
+
+.team_member_social-media_list_icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: fill 250ms, background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team_member_social-media_list_icon:hover {
   fill: #eeeeee;
   background-color: #2196f3;
 }
@@ -145,7 +162,17 @@ figure {
   margin-right: 47px;
 }
 
-.logo-footer {
+.footer__logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.footer__logo--decoration {
   color: #ffffff;
 }
 
@@ -162,11 +189,6 @@ figure {
   padding-bottom: 32px;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mail-footer {
-  color: #757575;
-  border-radius: nullpx;
 }
 
 .contact-list_item_phone {
@@ -187,7 +209,12 @@ figure {
   fill: #2196f3;
 }
 
-.phone-footer {
+.footer__mail {
+  color: #757575;
+  border-radius: nullpx;
+}
+
+.footer__phone {
   color: #757575;
   border-radius: nullpx;
 }
@@ -309,7 +336,29 @@ figure {
   padding: 0px;
 }
 
-.footer-wrapper {
+.team_member_social-media_list {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.clients_list {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer--wrapper {
   display: flex;
   list-style-position: inside;
   list-style-type: none;
@@ -590,15 +639,19 @@ button:hover {
   padding-bottom: 50px;
   padding-top: 94px;
 }
-.description {
-  font-size: 16px;
-  font-weight: 400;
+
+.clients_title {
+  border-radius: nullpx;
+  font-size: 36px;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--primary-color);
+  padding-bottom: 50px;
 }
-.person {
+
+.team_member {
   font-size: 16px;
   font-weight: 500;
   line-height: 100%;
@@ -606,12 +659,22 @@ button:hover {
   text-align: center;
   color: var(--primary-color);
 }
+
+.team_member_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
+
 .footer {
   background-color: #2f303a;
   height: 252px;
 }
 
-.list-footer {
+.footer__adress__list {
   font-size: 14px;
   font-weight: 400;
   line-height: 146%;
@@ -625,7 +688,8 @@ button:hover {
   margin-bottom: 0px;
   padding: 0px;
 }
-.list-footer-item {
+
+.footer__adress__list__item {
   margin-bottom: 9px;
 }
 
@@ -706,6 +770,20 @@ button:hover {
   padding: 0 15px;
 }
 
+.clients--container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.footer--container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
 .section {
   padding-top: 94px;
 }
@@ -722,7 +800,11 @@ button:hover {
   padding-top: 94px;
 }
 
-.footer-adress {
+.clients {
+  padding-top: 94px;
+}
+
+.footer__adress {
   display: block;
   padding-top: 60px;
 }
@@ -783,13 +865,13 @@ figure {
   padding-right: 45px;
 }
 
-.client {
+.client_icon {
   fill: #afb1b8;
   transition: fill 250ms, backround-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client:hover {
+.client_icon:hover {
   fill: #2196f3;
 }
 
@@ -798,9 +880,9 @@ figure {
   padding-top: 20px;
 }
 
-.main-icons {
+/* .main-icons {
   margin-right: 10px;
-}
+} */
 
 .footer-span {
   font-family: Roboto;
